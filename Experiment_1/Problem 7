@@ -1,0 +1,6 @@
+txt = load("ConvFile1.txt");
+[audiodata,Fs]=audioread("Track003.wav");
+convol = conv(audiodata,txt);
+Fs = 44100;
+filename='track301.wav';
+audiowrite(filename,convol,Fs)
