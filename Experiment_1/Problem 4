@@ -1,0 +1,8 @@
+\\z=520........ It is the last three digits of my registration no.
+a=1+mod(z,3)
+F = 250*a;
+[s,Fs] = audioread("speech.wav")
+y = s.*cos(2*pi*(F./Fs));
+figure
+subplot(2,1,1);plot(s)
+subplot(2,1,2);plot(y)
