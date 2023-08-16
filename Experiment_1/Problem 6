@@ -1,0 +1,17 @@
+this code is for generating an audio file of Sounds Do Re Mi Fa So La Ti
+
+
+t = 0:0.001:5;
+Fs = 5000;
+s1 = sin(2*pi*261.63*t);
+s2 = sin(2*pi*293.66*t);
+s3 = sin(2*pi*329.63*t);
+s4 = sin(2*pi*349.23*t);
+s5 = sin(2*pi*392.00*t);
+s6 = sin(2*pi*220.00*t);
+s7 = sin(2*pi*246.94*t);
+s8 = [s1,s2,s3,s4,s5,s6,s7];
+load handel.mat
+
+file = 'handel.wav';
+audiowrite(file,s8,Fs);
