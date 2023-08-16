@@ -1,0 +1,8 @@
+S_freq = 5000;
+t = 0:0.001:5;
+x1 = sin(200*t);
+x2 = sin(220*t);
+x3 = [x1,x2];
+load handel.mat
+file = 'handel.wav';
+audiowrite(file,x3,S_freq);
