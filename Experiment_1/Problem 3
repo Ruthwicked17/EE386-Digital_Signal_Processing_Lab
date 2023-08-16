@@ -1,0 +1,23 @@
+3_i
+E = ECGData;
+stackedplot(E);
+
+
+3_ii
+r1 = table2array(R1);
+subplot(2,1,1)
+histogram(r1,500);
+r2 = table2array(R2);
+subplot(2,1,2)
+histogram(r2,100);
+meanr1 = mean(r1(:));
+meanr2 = mean(r2);
+stdr1 = std(r1);
+stdr2 = std(r2);
+
+
+3_iii
+sound(data1,fs1)
+sound(data2,fs2)
+sound(data3,fs3)
+sound(data4,fs4)
